@@ -1,0 +1,27 @@
+.container {
+    min-height: calc(100vh - 66px);
+}
+
+.welcome-container {
+    max-width: 540px;
+    margin: 80px auto;
+    padding: 30px;
+    text-align: center;
+    margin-top: 10%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .welcome-text {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+  }
+  

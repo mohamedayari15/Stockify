@@ -1,0 +1,40 @@
+<div class="container">
+    <form (ngSubmit)="updateProduct(productData, productId)">
+        <h2>Update Product</h2>
+        
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" [(ngModel)]="productData.Name" name="Name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Price: </label>
+            <input type="number" [(ngModel)]="productData.Price" name="Price" required>
+        </div>
+
+        <div class="form-group">
+            <label>Description: </label>
+            <textarea type="text" [(ngModel)]="productData.Description" name="Description" required> </textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Category: </label>
+            <input type="text" [(ngModel)]="productData.Category" name="Category" required>
+        </div>
+
+        <div class="form-group">
+            <label>Quantity: </label>
+            <input type="number" [(ngModel)]="productData.Quantity" name="Quantity" required>
+        </div>
+
+        <div class="form-group">
+            <label>Image: </label>
+            <input id="Image" type="file" (change)="onFileSelected($event)" name="Image" required>
+        </div>
+
+        <div class="buttons">
+            <button class="edit">Update</button>
+            <button class="Cancel" (click)="Cancel()">Cancel</button>
+        </div>
+    </form>
+</div>

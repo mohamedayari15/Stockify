@@ -1,0 +1,9 @@
+<h4>You can see all product details by clicking on it</h4>
+<div class="container">
+    <div *ngFor="let prod of Products" [hidden]="prod.Category !== 'Laptop'">
+        <img *ngIf="prod.Image" [src]="'http://localhost:3000/uploads/' + prod.Image" (click)="viewProdDetails(prod._id)" alt="">
+            <h3>{{prod.Name}}</h3>
+            <p>-Price: ${{prod.Price}}</p>
+            <button (click)="viewProdDetails(prod._id)" class="btn btn-primary">See Details</button>
+    </div>
+</div>

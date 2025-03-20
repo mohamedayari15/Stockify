@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(213, 207, 198);
+  padding: 16px 20px;
+  border-radius: 12px;
+}
+
+nav h2 {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  padding: 0;
+  margin: auto;
+}
+
+nav ul li {
+  margin: 0px 16px 0px 16px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 16px;
+  transition: font-size 0.6s ease;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+

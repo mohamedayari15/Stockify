@@ -1,0 +1,16 @@
+<h5>Here you can see all <span>{{prodData.Name}}</span> details</h5>
+<div class="container">
+    <div class="card">
+        <img class="img" [src]="'http://localhost:3000/uploads/' + prodData.Image " alt="">
+        <div class="details">
+            <p><span>Price : </span>{{prodData.Price}}$</p>
+            <p><span>Quantity : </span>{{prodData.Quantity}}</p>
+            <p><span>Description : </span>{{prodData.Description}}</p>
+            <p><span>Created At : </span>{{prodData.CreatedAt | date}}</p>
+
+            <div class="buttons">
+                <button (click)="backToList()" class="btn btn-danger">Back To {{prodData.Category}} List</button>
+                <button id="add" (click)="addToCart(prodData)" class="btn btn-primary">Add To Cart</button>
+            </div>
+    </div>
+</div>

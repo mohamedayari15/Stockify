@@ -1,0 +1,41 @@
+/* Center the content */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Style the container */
+.container {
+    text-align: center;
+}
+
+/* 404 Title */
+.page-not-found-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+/* Message text */
+p {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

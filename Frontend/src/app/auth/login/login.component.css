@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 66px);
+    align-items: center;
+}
+
+img {
+    height: 360px;
+    width: 250px;
+    margin-left: 85px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px 0;
+    font-family: sans-serif;
+}
+
+form {
+    max-height: 450px;
+    width: 300px;
+    border: 1px solid #3c4b59;
+    border-radius: 8px;
+}
+
+form input {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin: 16px auto 16px auto;
+    padding-left: 10px;
+    border: 1px solid #7f8c99;
+    width: 84%;
+    height: 35px;
+    outline: none;
+    border-radius: 6px;
+}
+
+select {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin: 4px auto 5px auto;
+    padding-left: 10px;
+    border: 1px solid #7f8c99;
+    width: 84%;
+    height: 35px;
+    outline: none;
+    border-radius: 6px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343a40;
+    border-radius: 6px;
+    margin: 20px auto 10px auto;
+    color: white;
+    height: 37px;
+    width: 80%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.8 ease;
+}
+
+button:hover {
+    background-color: #4c5764;
+    font-size: 17px;
+}
+
+p {
+    margin-top: 12px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.Disabled {
+    background-color: #ccc;  
+    color: #666;  
+    cursor: not-allowed;  
+    opacity: 0.6;  
+}
+
+.alert-danger {
+    width: 84%;
+    margin: -6px auto 10px auto;
+    font-size: 14px;
+    color: red;
+}
+
+.successmsg {
+    width: 84%;
+    margin: 5px auto 10px auto;
+    font-size: 14px;
+    color: green;
+}
+
+.errormsg {
+    width: 84%;
+    margin: 0px auto 10px auto;
+    font-size: 14px;
+    color: red;
+}
+
+button:disabled {
+    background-color: #ccc; 
+    color: #666;  
+    cursor: not-allowed;  
+    opacity: 0.6; 
+}
+
+
+     

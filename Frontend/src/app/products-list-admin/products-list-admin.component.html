@@ -1,0 +1,37 @@
+<div class="container">
+    <h3>Products List <i class="fa fa-box"></i></h3>
+
+    <div class="add-product">
+        <button (click)="goToAddProd()" class="btn btn-primary">+ Add Product</button>
+        <h5>Total products : {{Products.length}}</h5>
+    </div>
+
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Created At</th>
+                    <th>Updated At</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let Prod of Products">
+                    <td>{{ Prod.Name }}</td>
+                    <td>${{ Prod.Price | number:'1.2-2' }}</td>
+                    <td>{{ Prod.Category }}</td>
+                    <td>{{ Prod.Quantity }}</td>
+                    <td>{{ Prod.CreatedAt | date }}</td>
+                    <td>{{ Prod.UpdatedAt | date }}</td>
+                    <td>
+                    <div class="buttons">
+                        <button class="btn btn-warning" [routerLink]="['/update-product', Prod._id]"><i class="fa fa-edit"></i></button>
+                        <button class="btn btn-danger" (click)="deleteProduct(Prod._id)"><i class="fa fa-trash"></i></button>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <h2>Create Account</h2> 
+        
+        <input type="text" placeholder="User Name" #fullNameInput="ngModel" ngModel name="fullName" [(ngModel)]="fullName" required>
+        <div class="alert-danger" *ngIf="fullNameInput.errors?.['required'] && fullNameInput.touched">this input is required !</div>
+        
+        <input type="email" placeholder="Enter email" #emailInput="ngModel" ngModel name="Email" [(ngModel)]="Email" required minlength="8" email>
+        <div class="alert-danger" *ngIf="emailInput.errors?.['required'] && emailInput.touched">Email input is required !</div>
+        <div class="alert-danger" *ngIf="emailInput.errors?.['minlength']">Email must be 8 caracters.</div>
+        <div class="alert-danger" *ngIf="emailInput.errors?.['email']">Invalid email format.</div>
+        
+        <input type="password" placeholder="Enter Password" #passwordInput="ngModel" ngModel name="Password" [(ngModel)]="Password" required minlength="6">
+        <div class="alert-danger" *ngIf="passwordInput.errors?.['required'] && passwordInput.touched">Password input is required !</div>
+        <div class="alert-danger" *ngIf="passwordInput.errors?.['minlength']">This input must be 6 caracters</div>
+        
+        <input type="password" placeholder="Confirm Password" #confirmPasswordInput="ngModel" ngModel name="confirmPassword" [(ngModel)]="confirmPassword" required minlength="6">
+        <div class="alert-danger" *ngIf="confirmPasswordInput.errors?.['required'] && confirmPasswordInput.touched">Confirm password is required !</div>
+        <div class="alert-danger" *ngIf="confirmPasswordInput.errors?.['minlength']">This input must be 6 caracters.</div>
+        
+        <select class="profile-dropdown" name="Role" [(ngModel)]="Role" required>
+            <option value="Admin">Admin</option>
+            <option value="User">User</option>
+        </select>
+
+        <p>Already have an account? <a routerLink="/login"> Login in</a></p>
+        <button class="Disabled" type="submit" [disabled]="f.invalid">Register</button>
+        
+        <p class="successmsg">{{successmsg}}</p>
+        <p class="errormsg">{{errormsg}}</p>
+    </form>
+
+    <img src="assets/undraw_design-tools_owgm.svg" alt="">
+</div>

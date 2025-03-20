@@ -1,0 +1,29 @@
+<nav class="navbar">
+  <ul class="navbar-list">
+    <li class="navbar-item"><a class="navbar-link" routerLink="welcome" routerLinkActive="active"><i class="welcome-icon fas fa-smile"></i></a></li>
+    <li class="navbar-item"><a class="navbar-link" routerLink="our-laptops" routerLinkActive="active"><i class="fas fa-laptop-code"></i> Our Laptops</a></li>
+    <li class="navbar-item"><a class="navbar-link" routerLink="our-televisions" routerLinkActive="active"><i class="fas fa-tv"></i> Our Televisions</a></li>
+    <li class="navbar-item"><a class="navbar-link" routerLink="our-phones" routerLinkActive="active"><i class="fas fa-mobile-alt"></i> Our Smartphones</a></li>
+  </ul>
+
+  <div class="cart-container">
+    <span (click)="toggleCartDropdown()" class="cart-icon" [ngClass]="{'cart-filled': cartCount > 0}">🛒 Cart ({{ cartCount }})</span>
+
+    <div *ngIf="isDropDownOpen" class="cart-dropdown">
+      <p *ngIf="cartCount === 0">Your cart is empty, you need to add at least one product !</p>
+      <ul *ngIf="cartCount > 0">
+        <li *ngFor="let product of Products">
+          Name: {{ product.Name }} - Price: {{ product.Price }}$
+          <button class="remove" (click)="removeFromCart(product)">Remove</button>
+        </li>
+      </ul>
+      <p class="total" *ngIf="cartCount > 0"><strong>Total:</strong> {{ calculateTotal() }}
+      <button *ngIf="cartCount > 0" routerLink="paiement" class="payer" (click)="payer()">Payer</button>
+    </p>
+    </div>
+  </div>
+
+  <button class="logout" (click)="logOut()"><i class="fa fa-sign-out"></i> Log Out</button>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,42 @@
+<div class="form-group"> 
+
+    <form [formGroup]="productForm" (ngSubmit)="addProduct()">
+        <h3>Add new product</h3>
+
+        <div class="form-field">
+            <label for="Name">Product name: </label>
+            <input type="text" formControlName="Name" id="Name" placeholder="Enter product name" required>
+        </div>
+    
+        <div class="form-field">
+            <label for="Price">Product price: </label>
+            <input type="number" formControlName="Price" id="Price" placeholder="Enter product price" required>
+        </div>
+        
+        <div class="form-field">
+            <label for="Description">Product description: </label>
+            <textarea type="text" formControlName="Description" name="Description" placeholder="Enter product description"></textarea>
+        </div>
+    
+        <div class="form-field">
+            <label for="Category">Product category: </label>
+            <input type="text" formControlName="Category" id="Category" placeholder="Enter product category" required>
+        </div>
+    
+        <div class="form-field">
+            <label for="Quantity">Product quantity: </label>
+            <input type="number" formControlName="Quantity" id="Quantity" placeholder="Enter product quantity" required>
+        </div>
+
+        <div>
+            <label for="Image">Upload image: </label>
+            <input id="Image" type="file" (change)="onFileSelected($event)" required>
+        </div>
+        
+        <div class="buttons">
+            <button (click)="goToProductsList()" class="btn btn-primary">Back to products list</button>
+            <button id="submit" class="btn btn-warning" [disabled]="!productForm.valid || !selectedFile">Submit</button>
+        </div>
+    </form>  
+
+</div>

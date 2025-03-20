@@ -1,0 +1,132 @@
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  margin: 6px;
+  border-radius: 10px;
+}
+  
+.navbar-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+.navbar-item {
+  margin: 0 10px;
+}
+
+.logout {
+  width: 120px;
+  padding: 8px 12px;
+  background-color: #7b97c5; 
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 50px;
+  height: 42px;
+}
+
+.logout:hover {
+  background-color: #e0dede;
+  color: black;
+}
+
+.total {
+  margin-top: 16px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.navbar-link:hover, .navbar-link.active {
+  background-color: #555;
+  border-radius: 6px;
+}
+  
+.cart-container {
+  position: relative;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: -28px;
+}
+
+.cart-icon {
+  font-size: 18px;
+  padding: 8px 12px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  transition: all 1.5s ease; 
+}
+  
+.cart-filled {
+  background-color: red;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  width: 160px;
+  border: none;
+}
+
+.cart-dropdown {
+  position: absolute;
+  right: -80px;
+  top: 48px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  min-height: 50px;
+  max-height: 500px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #333;
+}
+
+.cart-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-dropdown li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.remove {
+  width: 100px;
+  padding: 8px 12px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.remove:hover {
+  background-color: rgb(238, 128, 128);
+}
+
+.payer {
+  width: 120px;
+  padding: 8px 12px;
+  background-color: rgb(90, 145, 255);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-left: 32px;
+}
+
+.payer:hover {
+  background-color: rgb(121, 165, 236);
+}

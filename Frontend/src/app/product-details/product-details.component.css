@@ -1,0 +1,61 @@
+.container {
+    min-height: calc(100vh - 66px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+}
+
+h5 {
+    text-align: center;
+    margin-top: 16px;
+}
+
+h5 span {
+    color: #f44336;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p span {
+    font-weight: bold;
+}
+
+p {
+    font-size: 14px;
+}
+
+.card {
+    max-height: 500px;
+    width: 400px;
+    margin-top: 20px;
+    border: 1px solid gainsboro;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.img {
+    margin: 0px auto 10px auto;
+}
+
+.details {
+    margin-left: 16px;
+    margin-right: 1px;
+}
+
+.details p {
+    margin-top: -5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#add {
+    width: 140px;
+}

@@ -1,0 +1,10 @@
+<nav class="navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item"><a class="navbar-link" routerLink="products-list-admin" routerLinkActive="active"><i class="fas fa-list"></i> Products List</a></li>
+      <li class="navbar-item"><a class="navbar-link" routerLink="add-product" routerLinkActive="active"><i class="fas fa-plus"></i> Add new product</a></li>
+    </ul>
+    <button (click)="logOut()"><i class="fa fa-sign-out"></i> Log Out</button>
+</nav>
+  
+<router-outlet></router-outlet>
+  

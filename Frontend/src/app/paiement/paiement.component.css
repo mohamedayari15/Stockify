@@ -1,0 +1,52 @@
+.payment-container {
+    width: 340px;
+    margin: 60px auto 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  p {
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .product-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .empty-cart {
+    font-size: 16px;
+    color: #ff0000;
+    margin-bottom: 20px;
+  }
+  
+  .payment-options h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .payment-btn:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(213, 207, 198);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 66px);
+    padding: 50px 20px;
+}
+
+img {
+    width: 540px;
+    border-radius: 10px;
+    margin: auto 50px 16px 50px;
+}
+
+.about-content {
+    padding: 20px;
+    margin-left: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}

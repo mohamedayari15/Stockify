@@ -1,0 +1,80 @@
+.container {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+}
+
+input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#Image {
+    height: 38px;
+    padding: 4px;
+}
+
+textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    margin: 10px auto 10px auto;
+    padding: 8px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit {
+    background: #007bff;
+}
+
+.Cancel {
+    background: #dc3545;
+}
+
+.edit:hover {
+    background: #0056b3;
+}
+
+.Cancel:hover {
+    background: #c82333;
+}
