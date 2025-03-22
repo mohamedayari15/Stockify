@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, tap } from 'rxjs';
+import { BehaviorSubject, Observable, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
   
 export class AuthService {
+  islogedInSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+
+  
 
   apiUrl = 'http://localhost:3000';
 
@@ -29,6 +32,7 @@ export class AuthService {
           console.log("✅ Token stored:", res.Token);
           localStorage.setItem('Role', res.Role);
           console.log("✅ Role stored:", res.Role);
+          this.islogedInSubject.next(true);
         }
         else {
           console.warn("⚠️ No token received from the server!");
@@ -60,7 +64,10 @@ export class AuthService {
   }
 
   logOut() {
-    localStorage.removeItem('Token');
+    // localStorage.removeItem('Token');
+    // localStorage.removeItem('Role');
+    localStorage.clear();
+    this.islogedInSubject.next(false);
     if(this.getRole() === 'Admin')
       console.log("🚪 Admin Logged Out");
     else

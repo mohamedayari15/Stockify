@@ -13,7 +13,12 @@ export class NavbarComponent {
   constructor(public authService : AuthService){}
 
   ngOnInit(){
-    this.loggedIn = this.authService.isLoggedIn();
+    this.authService.islogedInSubject.subscribe(
+      ress => {
+        this.loggedIn = ress || this.authService.isLoggedIn()
+        console.log(this.loggedIn)
+      }
+    )
     console.log(this.loggedIn)
   }
 }

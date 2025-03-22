@@ -11,9 +11,13 @@ export class FooterComponent {
   loggedIn: boolean = false
 
   constructor(private authService : AuthService){}
-
-  ngOnInit() {
-    this.loggedIn = this.authService.isLoggedIn()
+  ngOnInit(){
+    this.authService.islogedInSubject.subscribe(
+      ress => {
+        this.loggedIn = ress || this.authService.isLoggedIn()
+        console.log(this.loggedIn)
+      }
+    )
     console.log(this.loggedIn)
   }
 }
