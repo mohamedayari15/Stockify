@@ -114,6 +114,7 @@ a:hover {
     margin: 0px auto 10px auto;
     font-size: 14px;
     color: red;
+    margin-top: -15px;
 }
 
 button:disabled {
