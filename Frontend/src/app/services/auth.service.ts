@@ -8,13 +8,10 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
   
 export class AuthService {
   islogedInSubject: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
-
   
-
   apiUrl = 'http://localhost:3000';
 
   constructor(private http: HttpClient) { }
-  
   register(registerData: any): Observable<any> {
 
     const endPoint = registerData.Role === 'Admin'? 'Admin/register': 'User/register'
