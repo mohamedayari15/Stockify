@@ -1,0 +1,216 @@
+[{
+  "_id": {
+    "$oid": "67cc8d97a8fd7b12b5457c20"
+  },
+  "Name": "Asus Tuff",
+  "Description": "good",
+  "Price": 3500,
+  "Quantity": 10,
+  "Category": "Laptop",
+  "Image": "1741458838887.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T18:33:59.289Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T22:05:14.801Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccabcda8fd7b12b5457d0f"
+  },
+  "Name": "Smart TV",
+  "Description": "Good",
+  "Price": 4500,
+  "Quantity": 10,
+  "Category": "Television",
+  "Image": "1741466573822.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T20:42:53.855Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T22:04:03.047Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbaff1a7adc9c1c30c405"
+  },
+  "Name": "Motorela",
+  "Description": "Good",
+  "Price": 219,
+  "Quantity": 6,
+  "Category": "Smartphone",
+  "Image": "1741470463743.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:47:43.751Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:47:43.751Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbb1a1a7adc9c1c30c408"
+  },
+  "Name": "Nokia 2",
+  "Description": "Good",
+  "Price": 349,
+  "Quantity": 10,
+  "Category": "Smartphone",
+  "Image": "1741470490896.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:48:10.915Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:48:10.915Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbbb21a7adc9c1c30c41d"
+  },
+  "Name": "Sony",
+  "Description": "Good",
+  "Price": 1400,
+  "Quantity": 10,
+  "Category": "Television",
+  "Image": "1741470642654.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:50:42.666Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:51:38.600Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbbda1a7adc9c1c30c420"
+  },
+  "Name": "Smart Led TV",
+  "Description": "Good",
+  "Price": 3900,
+  "Quantity": 15,
+  "Category": "Television",
+  "Image": "1741470682589.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:51:22.595Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:51:22.595Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbc2e1a7adc9c1c30c433"
+  },
+  "Name": "acer",
+  "Description": "Good",
+  "Price": 1300,
+  "Quantity": 4,
+  "Category": "Laptop",
+  "Image": "1741470766220.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:52:46.229Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:52:46.229Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbc7d1a7adc9c1c30c43b"
+  },
+  "Name": "Infinix Smart 6",
+  "Description": "Good",
+  "Price": 449,
+  "Quantity": 12,
+  "Category": "Smartphone",
+  "Image": "1741470845022.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:54:05.032Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:54:05.032Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbcd61a7adc9c1c30c444"
+  },
+  "Name": "Hisense",
+  "Description": "Good",
+  "Price": 3900,
+  "Quantity": 10,
+  "Category": "Television",
+  "Image": "1741470934485.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:55:34.503Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:55:34.503Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbcf51a7adc9c1c30c447"
+  },
+  "Name": "Antica",
+  "Description": "Good",
+  "Price": 219,
+  "Quantity": 1,
+  "Category": "Television",
+  "Image": "1741470965017.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:56:05.031Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:56:05.031Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbd5f1a7adc9c1c30c455"
+  },
+  "Name": "MacBok Air 11.6",
+  "Description": "Good",
+  "Price": 6999,
+  "Quantity": 5,
+  "Category": "Laptop",
+  "Image": "1741471071324.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:57:51.336Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-08T21:57:51.336Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ccbd761a7adc9c1c30c458"
+  },
+  "Name": "msi",
+  "Description": "Good",
+  "Price": 1500,
+  "Quantity": 10,
+  "Category": "Laptop",
+  "Image": "1741471094164.jpeg",
+  "CreatedAt": {
+    "$date": "2025-03-08T21:58:14.172Z"
+  },
+  "UpdatedAt": {
+    "$date": "2025-03-09T03:45:13.813Z"
+  },
+  "__v": 0
+}]
