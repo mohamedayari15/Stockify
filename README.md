@@ -110,10 +110,5 @@ db.products.find().pretty()
 ✅ Authentification et gestion des utilisateurs
 ✅ Génération de rapports
 
----
 
-## 📩 Contact
-Si vous avez des questions ou des suggestions, n’hésitez pas à me contacter.
-
-🚀 Bon développement avec **Stockify** !
 
