@@ -1,27 +1,119 @@
-# Frontend
+# 📌 Stockify - Gestion des Produits
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.15.
+Stockify est une application de gestion des stocks et des produits développée avec le **MEAN stack** (MongoDB, Express.js, Angular, Node.js).
 
-## Development server
+## 🚀 Installation et Configuration
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1️⃣ Cloner le projet  
+Sur votre terminal, exécutez :
 
-## Code scaffolding
+```bash
+git clone https://github.com/ton_nom_utilisateur/stockify.git
+cd stockify
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+### 2️⃣ Installer les dépendances  
+📌 **Backend (Node.js + Express)**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+cd backend
+npm install
+```
 
-## Running unit tests
+📌 **Frontend (Angular)**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+cd ../frontend
+npm install
+```
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 3️⃣ Configurer la Base de Données  
+MongoDB doit être installé et en cours d'exécution sur votre machine. Si ce n'est pas encore fait, démarrez MongoDB :
 
-## Further help
+```bash
+mongod
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Dans le fichier `backend/config.js`, configurez l'URL de votre base MongoDB :
+
+```javascript
+module.exports = {
+  mongoURI: "mongodb://localhost:27017/stockify"
+};
+```
+
+---
+
+### 4️⃣ Démarrer les serveurs  
+
+📌 **Lancer le serveur backend** :
+
+```bash
+cd backend
+node server.js
+```
+
+📌 **Lancer le serveur frontend** :
+
+```bash
+cd frontend
+ng serve --open
+```
+
+---
+
+## 🗂 Importer la Base de Données
+
+Si vous souhaitez importer la base de données, suivez ces étapes :
+
+### 🔹 **Option 1 : Importer depuis un fichier JSON**
+Exécutez la commande suivante pour importer les collections :
+
+```bash
+mongoimport --uri="mongodb://localhost:27017/stockify" --collection=products --file=db_backup/products.json --jsonArray
+```
+
+Faites la même chose pour les autres collections si nécessaire.
+
+---
+
+### 🔹 **Option 2 : Restaurer un Backup Complet**
+Si un dossier `backup/` est disponible dans le projet, vous pouvez restaurer toute la base de données avec :
+
+```bash
+mongorestore --uri="mongodb://localhost:27017/stockify" backup/stockify
+```
+
+---
+
+## ✅ Vérification
+Ouvrez **MongoDB Compass**, connectez-vous à `mongodb://localhost:27017/stockify`, et vérifiez si les collections sont bien ajoutées.
+
+Vous pouvez aussi exécuter cette commande dans le terminal :
+
+```bash
+mongo
+use stockify
+show collections
+db.products.find().pretty()
+```
+
+---
+
+## 🎯 Fonctionnalités Principales
+✅ Ajouter, modifier et supprimer des produits
+✅ Gérer les stocks en temps réel
+✅ Authentification et gestion des utilisateurs
+✅ Génération de rapports
+
+---
+
+## 📩 Contact
+Si vous avez des questions ou des suggestions, n’hésitez pas à me contacter.
+
+🚀 Bon développement avec **Stockify** !
+
