@@ -55,20 +55,12 @@ form select {
     border-radius: 6px;
 }
 
-input[type="email"]:focus {
-    border: 1px solid #007bff;
-}
-
-input[type="password"]:focus {
+form input:focus {
     border: 1px solid #007bff;
 }
 
 .role-dropdown:focus {
     border: 1px solid #007bff;
-}
-
-.success-border {
-    border: 1px solid green;
 }
 
 p {
@@ -79,7 +71,7 @@ p {
 }
 
 a {
-    color: rgb(110, 110, 241);
+    color: #007bff;
     text-decoration: none;
     font-weight: bold;
     margin-left: 6px;

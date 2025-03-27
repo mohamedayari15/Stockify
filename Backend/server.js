@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
 
-const cors = require('cors')
-
 app.use(express.json());
+
+require('./config/config');
+
+const cors = require('cors')
 app.use(cors());
 
 
-require('./config/config');
 
 const adminRoute = require('./routes/admin');
 app.use('/Admin', adminRoute);

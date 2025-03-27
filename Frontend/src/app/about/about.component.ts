@@ -1,4 +1,5 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AboutComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   scrollToTop() {
   let currentScroll = document.documentElement.scrollTop;
@@ -15,12 +16,13 @@ export class AboutComponent {
 
   if (currentScroll > 0) {
     window.requestAnimationFrame(this.scrollToTop.bind(this));
-    window.scrollTo(0, currentScroll - currentScroll / 10);
+    window.scrollTo(0, currentScroll - currentScroll / 15);
   }
 }
 
   goToHome() {
-  
+  this.router.navigate(['/home']);
+  this.scrollToTop();
 }
 
 }

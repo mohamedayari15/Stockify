@@ -5,12 +5,7 @@
     font-family: Arial, sans-serif;
     background-color: rgb(213, 207, 198);
 }
-
-html {
-    scroll-behavior: smooth;
-}
   
-
 section {
     display: flex;
     flex-direction: column;

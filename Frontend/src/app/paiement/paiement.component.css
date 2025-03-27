@@ -1,6 +1,6 @@
 .payment-container {
     width: 340px;
-    margin: 60px auto 0 auto;
+    margin: 85px auto 0 auto;
     padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
@@ -35,18 +35,20 @@
   }
   
   .payment-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
     padding: 10px 20px;
     font-size: 16px;
     margin: 5px 0;
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
+    transition: all 0.4s ease;
   }
   
   .payment-btn:hover {
-    background-color: #45a049;
+    background-color: #5d5c5c;
+    color: white;
   }
   
