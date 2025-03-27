@@ -1,7 +1,7 @@
 <div class="container">
 
     <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-        <h2>Create Account</h2> 
+        <h3>Create Account</h3> 
         
         <input type="text" placeholder="User Name" #fullNameInput="ngModel" ngModel name="fullName" [(ngModel)]="fullName" required>
         <div class="alert-danger" *ngIf="fullNameInput.errors?.['required'] && fullNameInput.touched">this input is required !</div>
@@ -24,12 +24,11 @@
             <option value="User">User</option>
         </select>
 
-        <p>Already have an account? <a routerLink="/login"> Login in</a></p>
+        <p>Already have an account ?<a routerLink="/login">Login in</a></p>
         <button class="Disabled" type="submit" [disabled]="f.invalid">Register</button>
         
         <p class="successmsg">{{successmsg}}</p>
         <p class="errormsg">{{errormsg}}</p>
     </form>
 
-    <img src="assets/undraw_design-tools_owgm.svg" alt="">
 </div>

@@ -1,7 +1,7 @@
 
 <div class="container">
     <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-        <h2>Login</h2>
+        <h3>Login</h3>
 
         <input type="email" placeholder="Enter email" name="Email" formControlName="Email">
         <div class="alert-danger" *ngIf="myForm.get('Email')?.touched && myForm.get('Email')?.errors?.['required']">Email input is required !</div>
@@ -18,12 +18,11 @@
             <option value="User">User</option>
         </select>
 
-        <p>Don't have an account? <a routerLink="/register"> Register</a></p>
+        <p>Don't have an account ?<a routerLink="/register">Register</a></p>
         <button type="submit" [disabled]="myForm.invalid"> Login</button>
 
         <p class="successmsg">{{successmsg}}</p>
         <p class="errormsg">{{errormsg}}</p>
     </form>
     
-    <img src="assets/undraw_mobile-login_4ntr.svg" alt="">
 </div>

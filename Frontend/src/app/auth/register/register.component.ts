@@ -24,7 +24,7 @@ export class RegisterComponent {
     console.log("Form Submitted!", f.value); 
     
     if (this.Password !== this.confirmPassword) {
-      console.log("Passwords do not matches")
+      console.log("Passwords do not match")
       this.errormsg = 'Passwords do not match !'
     }
 

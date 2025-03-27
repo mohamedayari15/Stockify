@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
+
+  constructor() { }
+
+  scrollToTop() {
+  let currentScroll = document.documentElement.scrollTop;
+  console.log(currentScroll)
+
+  if (currentScroll > 0) {
+    window.requestAnimationFrame(this.scrollToTop.bind(this));
+    window.scrollTo(0, currentScroll - currentScroll / 10);
+  }
+}
 
 }
