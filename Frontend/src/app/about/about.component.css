@@ -56,10 +56,10 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    row-gap: 100px;
+    row-gap: 50px;
     width: 100%;
     max-width: 1200px;
-    margin-top: 80px;
+    margin-top: 75px;
 }
 
 .image-gallery img {
@@ -120,4 +120,5 @@ button {
     color: white;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: 30px;
 }
