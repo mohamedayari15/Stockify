@@ -3,13 +3,12 @@
     <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
         <h3>Login</h3>
 
-        <input type="email" placeholder="Enter email" name="Email" formControlName="Email">
+        <input type="email" placeholder="Enter email" name="Email" formControlName="Email" min="8">
         <div class="alert-danger" *ngIf="myForm.get('Email')?.touched && myForm.get('Email')?.errors?.['required']">Email input is required !</div>
         <div class="alert-danger" *ngIf="myForm.get('Email')?.errors?.['minlength']">Email must be 8 caracters.</div>
         <div class="alert-danger" *ngIf="myForm.get('Email')?.errors?.['email']">Invalid email format.</div>
-        
 
-        <input type="password" placeholder="Enter Password" name="Password" formControlName="Password">
+        <input type="password" placeholder="Enter Password" name="Password" formControlName="Password" min="6">
         <div class="alert-danger" *ngIf="myForm.get('Password')?.touched && myForm.get('Password')?.errors?.['required']">Password input is required !</div>
         <div class="alert-danger" *ngIf="myForm.get('Password')?.errors?.['minlength']">Password ùust be 6 caracters.</div>
 

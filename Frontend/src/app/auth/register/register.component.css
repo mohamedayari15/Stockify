@@ -32,6 +32,14 @@ form input {
     border-radius: 6px;
 }
 
+form input:focus {
+    border: 1px solid #007bff;
+}
+
+.role-dropdown:focus {
+    border: 1px solid #007bff;
+}
+
 .alert-danger {
     width: 84%;
     margin: -8px auto 10px auto;

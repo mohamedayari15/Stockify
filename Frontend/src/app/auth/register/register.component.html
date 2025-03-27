@@ -19,7 +19,7 @@
         <div class="alert-danger" *ngIf="confirmPasswordInput.errors?.['required'] && confirmPasswordInput.touched">Confirm password is required !</div>
         <div class="alert-danger" *ngIf="confirmPasswordInput.errors?.['minlength']">This input must be 6 caracters.</div>
         
-        <select class="profile-dropdown" name="Role" [(ngModel)]="Role" required>
+        <select class="role-dropdown" name="Role" [(ngModel)]="Role" required>
             <option value="Admin">Admin</option>
             <option value="User">User</option>
         </select>
