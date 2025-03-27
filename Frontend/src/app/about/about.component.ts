@@ -19,4 +19,8 @@ export class AboutComponent {
   }
 }
 
+  goToHome() {
+  
+}
+
 }

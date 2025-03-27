@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  Products = []
+
+  // constructor(private prodService: productService) { }
+
+  // ngOnInit() {
+  //   this.prodService.getProducts().subscribe((Data)=>{
+  //     console.log(Data)
+  //     this.Products = Data
+  //   })
+  // }
 }
