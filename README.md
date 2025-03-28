@@ -3,8 +3,6 @@
 Stockify est une application de gestion des stocks et des produits développée avec le **MEAN stack** (MongoDB, Express.js, Angular, Node.js).
 
 
-![pexels-pixabay-38519](https://github.com/user-attachments/assets/54044001-b063-4660-9147-7fe2f3c0e763)
-
 ### Configurer la Base de Données  
 MongoDB doit être installé et en cours d'exécution sur votre machine. Si ce n'est pas encore fait, démarrez MongoDB :
 
