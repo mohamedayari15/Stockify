@@ -2,41 +2,10 @@
 
 Stockify est une application de gestion des stocks et des produits développée avec le **MEAN stack** (MongoDB, Express.js, Angular, Node.js).
 
-## 🚀 Installation et Configuration
 
-### 1️⃣ Cloner le projet  
-Sur votre terminal, exécutez :
 
-```bash
-git clone https://github.com/ton_nom_utilisateur/stockify.git
-cd stockify
-```
-
----
-
-### 2️⃣ Installer les dépendances  
-📌 **Backend (Node.js + Express)**
-
-```bash
-cd backend
-npm install
-```
-
-📌 **Frontend (Angular)**
-
-```bash
-cd ../frontend
-npm install
-```
-
----
-
-### 3️⃣ Configurer la Base de Données  
+### Configurer la Base de Données  
 MongoDB doit être installé et en cours d'exécution sur votre machine. Si ce n'est pas encore fait, démarrez MongoDB :
-
-```bash
-mongod
-```
 
 Dans le fichier `backend/config.js`, configurez l'URL de votre base MongoDB :
 
@@ -45,26 +14,6 @@ module.exports = {
   mongoURI: "mongodb://localhost:27017/stockify"
 };
 ```
-
----
-
-### 4️⃣ Démarrer les serveurs  
-
-📌 **Lancer le serveur backend** :
-
-```bash
-cd backend
-node server.js
-```
-
-📌 **Lancer le serveur frontend** :
-
-```bash
-cd frontend
-ng serve --open
-```
-
----
 
 ## 🗂 Importer la Base de Données
 
