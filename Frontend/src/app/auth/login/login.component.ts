@@ -44,9 +44,17 @@ export class LoginComponent {
             }, 1500);
           }
           else {
-            setTimeout(() => {
+            const redirectUrl = localStorage.getItem('redirectUrl');
+            console.log("📌 redirectUrl récupéré après login:", redirectUrl);
+            if (redirectUrl) {
+              localStorage.removeItem('redirectUrl');
+              setTimeout(() => {
+                this.router.navigate([redirectUrl]); 
+              }, 1500);
+            }
+            else{
               this.router.navigate(['user-interface/welcome'])
-            }, 1500);
+            }
           }
         },
         err => {

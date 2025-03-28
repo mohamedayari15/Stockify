@@ -1,6 +1,5 @@
 <section>
     <div class="cover">
-      <img src="assets/undraw_voice-interface_vo02.svg" alt="">
       <div class="message">
         <h1>Welcome to Our Store</h1>
         <p>Your one-stop destination for everything you need!</p>
@@ -13,7 +12,7 @@
             <img *ngIf="prod.Image" [src]="'http://localhost:3000/uploads/' + prod.Image" alt="">
                 <h3>{{prod.Name}}</h3>
                 <p>-Price: ${{prod.Price}}</p>
-                <button (click)="addToCart()">Add To Cart</button>
+                <button (click)="addToCart(prod)">Add To Cart</button>
         </div>
       </div>
       <button (click)="scrollToTop()" class="scrollToTop"> ⬆ </button>

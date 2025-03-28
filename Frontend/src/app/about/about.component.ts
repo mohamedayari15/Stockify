@@ -10,6 +10,10 @@ export class AboutComponent {
 
   constructor(private router: Router) { }
 
+  ngOnInit(){
+    this.scrollToTop()
+  }
+
   scrollToTop() {
   let currentScroll = document.documentElement.scrollTop;
   console.log(currentScroll)
