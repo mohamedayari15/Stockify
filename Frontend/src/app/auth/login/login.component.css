@@ -59,7 +59,23 @@ form input:focus {
     border: 1px solid #007bff;
 }
 
-.role-dropdown:focus {
+form input:focus.ng-valid {
+    border: 1px solid green;
+}
+
+form input:focus.ng-invalid {
+    border: 1px solid red; 
+}
+
+input.ng-valid.ng-touched {
+    border: 1px solid green;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+form select:focus {
     border: 1px solid #007bff;
 }
 
@@ -93,12 +109,20 @@ button {
     width: 80%;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.8 ease;
+    transition: all 0.8s ease;
 }
 
 button:hover {
-    background-color: #4c5764;
-    font-size: 17px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+button:disabled {
+    background-color: #ccc; 
+    color: #666;  
+    cursor: not-allowed;  
+    opacity: 0.6; 
 }
 
 .successmsg {
@@ -114,13 +138,6 @@ button:hover {
     font-size: 14px;
     color: red;
     margin-top: -15px;
-}
-
-button:disabled {
-    background-color: #ccc; 
-    color: #666;  
-    cursor: not-allowed;  
-    opacity: 0.6; 
 }
 
 
