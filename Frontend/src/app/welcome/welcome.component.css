@@ -1,27 +1,28 @@
 .container {
-    min-height: calc(100vh - 66px);
+  min-height: calc(100vh - 66px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
 }
 
-.welcome-container {
-    max-width: 540px;
-    margin: 80px auto;
-    padding: 30px;
-    text-align: center;
-    margin-top: 10%;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
-  }
-  
-  h1 {
-    font-size: 50px;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  .welcome-text {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-  }
-  
+.welcome-title {
+  font-size: 42px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.welcome-text {
+  font-size: 20px;
+  color: #444;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+p {
+  letter-spacing: 1px;
+}

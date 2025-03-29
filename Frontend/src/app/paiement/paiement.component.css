@@ -1,54 +1,88 @@
-.payment-container {
-    width: 340px;
-    margin: 85px auto 0 auto;
-    padding: 20px;
-    text-align: center;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+h2 {
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  width: 90%;
+}
 
-  p {
-    letter-spacing: 1px;
-    font-size: 18px;
-  }
-  
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .product-item {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .empty-cart {
-    font-size: 16px;
-    color: #ff0000;
-    margin-bottom: 20px;
-  }
-  
-  .payment-options h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .payment-btn {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 5px 0;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 100%;
-    transition: all 0.4s ease;
-  }
-  
-  .payment-btn:hover {
-    background-color: #5d5c5c;
-    color: white;
-  }
-  
+.images {
+  display: flex;
+  justify-content: center;
+  width: 96%;
+}
+
+img {
+  width: 30px;
+  margin: 0 5px 0 0;
+  text-align: left;
+}
+
+.payment-container {
+  max-height: 540px;
+  width: 320px;
+  margin: 16px auto 0 auto; 
+  padding: 20px;
+  border: 1px solid gray;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.hama {
+  display: flex;
+  column-gap: 10px;
+  width: 95%;
+  margin: auto;
+}
+
+form input {
+  width: 95%;
+  height: 32px;
+  padding: 5px;
+  margin: 5px auto;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+h4 {
+  letter-spacing: 1px;
+}
+
+p {
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.empty-cart {
+  font-size: 16px;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.payment-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 24px 0 0 0;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+
+.payment-btn:hover {
+  background-color: #5d5c5c;
+  color: white;
+}

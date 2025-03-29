@@ -1,9 +1,10 @@
 <div class="container">
     <h3>Products List <i class="fa fa-box"></i></h3>
-
+    
     <div class="add-product">
         <button (click)="goToAddProd()" class="btn btn-primary">+ Add Product</button>
         <h5>Total products : {{Products.length}}</h5>
+        <p>⚠️ Rows with a red background indicate low quantity.</p>
     </div>
 
         <table class="product-table">
@@ -19,7 +20,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let Prod of Products">
+                <tr *ngFor="let Prod of Products" [ngClass]="{'sufissant': Prod.Quantity < 5}">
                     <td>{{ Prod.Name }}</td>
                     <td>${{ Prod.Price | number:'1.2-2' }}</td>
                     <td>{{ Prod.Category }}</td>

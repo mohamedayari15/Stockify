@@ -1,20 +1,30 @@
-<div class="payment-container">
-    <h2>Checkout</h2>
-  
+<h2>Set up your credit or <br> debit card</h2>
+<div class="images">
+  <img src="assets/visa.png" alt="">
+  <img src="assets/masterCard.png" alt="">
+</div>
+
+<div class="payment-container">  
     <div *ngIf="Products.length === 0" class="empty-cart">
       <p>Your cart is empty !</p>
     </div>
-  
-    <div *ngFor="let product of Products" class="product-item">
-      <p><strong>{{ product.Name }}</strong> - {{ product.Price }}$</p>
+
+    <div *ngIf="Products.length > 0" class="order-summary">
+      <h4>🛒 Order Summary</h4>
+      <div *ngFor="let product of Products" class="product-item">
+        <p><strong>{{ product.Name }}</strong> - {{ product.Price }}$</p>
+      </div>
     </div>
 
-    <p class="total"><strong>Total:</strong> {{ calculateTotal() }}
+    <form class="payment-form">
+      <h3>Payment Details 💳</h3> 
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+      <div class="hama">
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="Expire date" required>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+      </div>
+      <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Card holder name" required>
+    </form>
 
-    <div class="payment-options">
-      <h3>Select Payment Method</h3>
-      <button class="payment-btn" (click)="selectPayment('credit-card')">Credit Card <img src="assets/2023-bath-england-visa-charities-900038331.webp" width="24px" style="border-radius: 4px;" alt=""></button>
-      <button class="payment-btn" (click)="selectPayment('paypal')">PayPal <img src="assets/images.jpg" width="32px" alt=""></button>
-    </div>
-  </div>
-  
+    <button class="payment-btn" (click)="selectPayment('credit-card')">Pay {{ calculateTotal() }}$</button>
+</div>

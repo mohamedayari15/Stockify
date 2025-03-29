@@ -9,11 +9,9 @@ import { Router } from '@angular/router';
 export class AboutComponent {
 
   constructor(private router: Router) { }
-
   ngOnInit(){
     this.scrollToTop()
   }
-
   scrollToTop() {
   let currentScroll = document.documentElement.scrollTop;
   console.log(currentScroll)
@@ -21,12 +19,11 @@ export class AboutComponent {
   if (currentScroll > 0) {
     window.requestAnimationFrame(this.scrollToTop.bind(this));
     window.scrollTo(0, currentScroll - currentScroll / 15);
+    }
   }
-}
-
   goToHome() {
   this.router.navigate(['/home']);
   this.scrollToTop();
-}
+  }
 
 }
