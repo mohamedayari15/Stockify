@@ -21,6 +21,8 @@ export class HomeComponent {
       console.log(Data)
       this.Products = Data
     })
+
+    this.scrollToTop()
   }
   
   addToCart(product: any) {
